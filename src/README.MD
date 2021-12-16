@@ -1,3 +1,4 @@
+@ para implatar o QR Code
 https://github.com/zxing-js/ngx-scanner/wiki/Getting-Started
 
 https://www.youtube.com/watch?v=aJMRWNbzORA

@@ -6,11 +6,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./webcam.component.scss']
 })
 export class WebcamComponent implements OnInit {
-  
+
   @ViewChild('preview') preview1;
   constructor() {
 
-    
+
   }
 
   ngOnInit(): void {
@@ -22,7 +22,7 @@ export class WebcamComponent implements OnInit {
 
 
   teste() {
-        console.log(this.preview1)
+    alert(this.preview1);
   }
 
 }
