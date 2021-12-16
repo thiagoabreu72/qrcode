@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
           videoDevices.push(device);
         }
       }
-      if (videoDevices.length > 0) {
+      /*if (videoDevices.length > 0) {
         let choosenDev;
         for (const dev of videoDevices) {
           if (dev.label.includes('front')) {
@@ -36,9 +36,10 @@ export class AppComponent implements OnInit {
         if (choosenDev) {
           this.qrScannerComponent.chooseCamera.next(choosenDev);
         } else {
-          this.qrScannerComponent.chooseCamera.next(videoDevices[0]);
+          this.qrScannerComponent.chooseCamera.next(videoDevices[1]);
         }
-      }
+      }*/
+      this.qrScannerComponent.chooseCamera.next(videoDevices[1]);
     });
 
     this.qrScannerComponent.capturedQr.subscribe(result => {
