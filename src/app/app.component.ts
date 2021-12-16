@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
     });
 
     this.qrScannerComponent.capturedQr.subscribe(result => {
-      console.log(result);
+      alert(result);
     });
   }
 
